@@ -9,7 +9,7 @@ const Queue = require('bull');
 
 const jobsConfig = require('../config')['jobs'];
 
-class Rater {
+class TaskMgr {
 
     constructor() {
         this.queues = {};
@@ -96,4 +96,4 @@ class Rater {
     }
 }
 
-module.exports = Rater;
+module.exports = TaskMgr;
